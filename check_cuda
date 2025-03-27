@@ -1,0 +1,11 @@
+import torch
+
+def select_device(device=''):
+    if device == 'cpu':
+        return torch.device('cpu')
+    else:
+        return torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+device = select_device()  # Automatically select CUDA if available, otherwise CPU
+print(device)
+print(device)
