@@ -1,0 +1,69 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.3",
+    "heartbeatAt": "2024-02-01T04:42:30.795724",
+    "startedAt": "2024-02-01T04:42:30.646299",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--workers",
+        "1",
+        "--batch-size",
+        "8",
+        "--device",
+        "0",
+        "--epochs",
+        "10",
+        "--img",
+        "640",
+        "640",
+        "--data",
+        "data/custom_data.yaml",
+        "--hyp",
+        "data/hyp.scratch.custom.yaml",
+        "--cfg",
+        "cfg/training/yolov7-custom.yaml",
+        "--name",
+        "yolov7-custom",
+        "--weights",
+        "yolov7.pt"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\DELL\\Downloads\\VA\\VA_code\\yolov7-main\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "DESKTOP-NJFBAHB",
+    "username": "DELL",
+    "executable": "C:\\python\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 991.0,
+        "min": 0.0,
+        "max": 1190.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 991.0,
+            "min": 0.0,
+            "max": 1190.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 221.93554306030273,
+            "used": 155.3667755126953
+        }
+    },
+    "gpu": "NVIDIA GeForce MX230",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX230",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 7.772789001464844
+    }
+}

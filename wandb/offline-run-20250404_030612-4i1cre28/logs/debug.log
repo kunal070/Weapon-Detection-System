@@ -1,0 +1,60 @@
+2025-04-04 03:06:12,980 INFO    MainThread:676 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-04 03:06:12,980 INFO    MainThread:676 [wandb_setup.py:_flush():67] Configure stats pid to 676
+2025-04-04 03:06:12,980 INFO    MainThread:676 [wandb_setup.py:_flush():67] Loading settings from C:\Users\kunal\.config\wandb\settings
+2025-04-04 03:06:12,980 INFO    MainThread:676 [wandb_setup.py:_flush():67] Loading settings from C:\Users\kunal\OneDrive\Desktop\yolov8\wandb\settings
+2025-04-04 03:06:12,980 INFO    MainThread:676 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-04 03:06:12,980 INFO    MainThread:676 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\kunal\OneDrive\Desktop\yolov8\wandb\offline-run-20250404_030612-4i1cre28\logs\debug.log
+2025-04-04 03:06:12,989 INFO    MainThread:676 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\kunal\OneDrive\Desktop\yolov8\wandb\offline-run-20250404_030612-4i1cre28\logs\debug-internal.log
+2025-04-04 03:06:12,989 INFO    MainThread:676 [wandb_init.py:init():761] calling init triggers
+2025-04-04 03:06:12,989 INFO    MainThread:676 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov7.pt', 'cfg': 'C:/Users/kunal/OneDrive/Desktop/yolov8/cfg/training/yolov7.yaml', 'data': 'C:/Users/kunal/OneDrive/Desktop/yolov8/data/custom_data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.3, 'cls_pw': 1.0, 'obj': 0.7, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.2, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0, 'paste_in': 0.0, 'loss_ota': 1}, 'epochs': 102, 'batch_size': 6, 'img_size': [512, 512], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'workers': 4, 'project': 'runs/train', 'entity': None, 'name': 'yolov7-custom', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'freeze': [0], 'v5_metric': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs\\train\\yolov7-custom4', 'total_batch_size': 6, '_wandb': {}}
+2025-04-04 03:06:12,989 INFO    MainThread:676 [wandb_init.py:init():784] starting backend
+2025-04-04 03:06:12,989 INFO    MainThread:676 [wandb_init.py:init():788] sending inform_init request
+2025-04-04 03:06:13,043 INFO    MainThread:676 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-04-04 03:06:13,043 INFO    MainThread:676 [wandb_init.py:init():798] backend started and connected
+2025-04-04 03:06:13,044 INFO    MainThread:676 [wandb_init.py:init():891] updated telemetry
+2025-04-04 03:06:13,080 INFO    MainThread:676 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-04 03:06:13,207 INFO    MainThread:676 [wandb_init.py:init():990] starting run threads in backend
+2025-04-04 03:06:13,403 WARNING MainThread:676 [wandb_init.py:init():1472] interrupted
+Traceback (most recent call last):
+  File "C:\Users\kunal\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_init.py", line 1468, in init
+    return wi.init(run_settings, run_config)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_init.py", line 1031, in init
+    run._on_start()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\kunal\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_run.py", line 2410, in _on_start
+    self._backend.interface.publish_python_packages(working_set())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\interface\interface.py", line 343, in publish_python_packages
+    for pkg in working_set:
+               ^^^^^^^^^^^
+  File "C:\Users\kunal\AppData\Roaming\Python\Python313\site-packages\wandb\util.py", line 1937, in working_set
+    yield InstalledDistribution(key=d.metadata["Name"], version=d.version)
+                                    ^^^^^^^^^^
+  File "C:\Python313\Lib\importlib\metadata\__init__.py", line 471, in metadata
+    return _adapters.Message(email.message_from_string(text))
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\email\__init__.py", line 37, in message_from_string
+    return Parser(*args, **kws).parsestr(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\email\parser.py", line 64, in parsestr
+    return self.parse(StringIO(text), headersonly=headersonly)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\email\parser.py", line 53, in parse
+    feedparser.feed(data)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\email\feedparser.py", line 176, in feed
+    self._call_parse()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\email\feedparser.py", line 180, in _call_parse
+    self._parse()
+    ~~~~~~~~~~~^^
+  File "C:\Python313\Lib\email\feedparser.py", line 240, in _parsegen
+    self._parse_headers(headers)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python313\Lib\email\feedparser.py", line 527, in _parse_headers
+    lastvalue = [line]
+    ^^^^^^^^^
+KeyboardInterrupt
+2025-04-04 03:06:14,223 INFO    MsgRouterThr:676 [mailbox.py:close():129] Closing mailbox, abandoning 0 handles.

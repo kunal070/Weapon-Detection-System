@@ -1,0 +1,60 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.1",
+  "startedAt":  "2025-03-25T20:23:06.844505Z",
+  "args":  [
+    "--workers",
+    "6",
+    "--batch-size",
+    "8",
+    "--cfg",
+    "C:/Users/kunal/OneDrive/Desktop/yolov8/cfg/training/yolov7.yaml",
+    "--data",
+    "C:/Users/kunal/OneDrive/Desktop/yolov8/data/custom_data.yaml",
+    "--batch",
+    "10",
+    "--epochs",
+    "100",
+    "--weights",
+    "yolov7.pt",
+    "--img",
+    "512",
+    "512",
+    "--name",
+    "yolov7-new",
+    "--hyp",
+    "C:/Users/kunal/OneDrive/Desktop/yolov8/data/hyp.scratch.custom.yaml"
+  ],
+  "program":  "C:\\Users\\kunal\\OneDrive\\Desktop\\yolov8\\train.py",
+  "codePath":  "train.py",
+  "root":  "C:\\Users\\kunal\\OneDrive\\Desktop\\yolov8",
+  "host":  "Kunal",
+  "executable":  "C:\\Python313\\python.exe",
+  "codePathLocal":  "train.py",
+  "cpu_count":  24,
+  "cpu_count_logical":  32,
+  "gpu":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1022836600832",
+      "used":  "240704487424"
+    }
+  },
+  "memory":  {
+    "total":  "16886128640"
+  },
+  "cpu":  {
+    "count":  24,
+    "countLogical":  32
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "memoryTotal":  "8585740288",
+      "cudaCores":  3072,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.3"
+}

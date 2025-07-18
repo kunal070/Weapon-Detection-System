@@ -1,0 +1,139 @@
+2024-05-03 23:49:08,567 INFO    StreamThr :18464 [internal.py:wandb_internal():86] W&B internal server running at pid: 18464, started at: 2024-05-03 23:49:08.563405
+2024-05-03 23:49:08,572 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: status
+2024-05-03 23:49:08,752 INFO    WriterThread:18464 [datastore.py:open_for_write():87] open: C:\Users\DELL\Desktop\yolov7-main\wandb\offline-run-20240503_234908-s7qc3r05\run-s7qc3r05.wandb
+2024-05-03 23:49:10,358 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: run_start
+2024-05-03 23:49:10,453 DEBUG   HandlerThread:18464 [system_info.py:__init__():27] System info init
+2024-05-03 23:49:10,454 DEBUG   HandlerThread:18464 [system_info.py:__init__():42] System info init done
+2024-05-03 23:49:10,454 INFO    HandlerThread:18464 [system_monitor.py:start():194] Starting system monitor
+2024-05-03 23:49:10,455 INFO    SystemMonitor:18464 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-03 23:49:10,455 INFO    HandlerThread:18464 [system_monitor.py:probe():214] Collecting system info
+2024-05-03 23:49:10,462 INFO    SystemMonitor:18464 [interfaces.py:start():190] Started cpu monitoring
+2024-05-03 23:49:10,463 INFO    SystemMonitor:18464 [interfaces.py:start():190] Started disk monitoring
+2024-05-03 23:49:10,464 INFO    SystemMonitor:18464 [interfaces.py:start():190] Started gpu monitoring
+2024-05-03 23:49:10,476 INFO    SystemMonitor:18464 [interfaces.py:start():190] Started memory monitoring
+2024-05-03 23:49:10,484 INFO    SystemMonitor:18464 [interfaces.py:start():190] Started network monitoring
+2024-05-03 23:49:10,499 DEBUG   HandlerThread:18464 [system_info.py:probe():151] Probing system
+2024-05-03 23:49:10,501 ERROR   gpu       :18464 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-03 23:49:10,501 ERROR   gpu       :18464 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-03 23:49:10,501 DEBUG   HandlerThread:18464 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-03 23:49:10,501 DEBUG   HandlerThread:18464 [system_info.py:probe():199] Probing system done
+2024-05-03 23:49:10,501 DEBUG   HandlerThread:18464 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.3', 'heartbeatAt': '2024-05-03T18:19:10.499950', 'startedAt': '2024-05-03T18:19:08.492290', 'docker': None, 'cuda': None, 'args': ('--batch-size', '16', '--cfg', 'C:\\Users\\DELL\\Desktop\\yolov7-main\\cfg\\training\\yolov7-custom.yaml', '--data', 'C:\\Users\\DELL\\Desktop\\yolov7-main\\data\\custom_data.yaml', '--batch', '8', '--epochs', '10', '--weights', 'yolov7.pt', '--img', '640', '640', '--name', 'yolov7-ashish', '--hyp', 'C:\\Users\\DELL\\Desktop\\yolov7-main\\data\\custom_data.yaml'), 'state': 'running', 'program': 'C:\\Users\\DELL\\Desktop\\yolov7-main\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'KP', 'username': 'DELL', 'executable': 'C:\\python\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 991.0, 'min': 0.0, 'max': 1190.0}, 'cpu_freq_per_core': [{'current': 991.0, 'min': 0.0, 'max': 1190.0}], 'disk': {'/': {'total': 221.93554306030273, 'used': 185.85416793823242}}, 'gpu': 'NVIDIA GeForce MX230', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX230', 'memory_total': 2147483648}], 'memory': {'total': 7.772792816162109}}
+2024-05-03 23:49:10,503 INFO    HandlerThread:18464 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-03 23:49:10,503 INFO    HandlerThread:18464 [system_monitor.py:probe():227] Publishing system info
+2024-05-03 23:49:10,505 INFO    HandlerThread:18464 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-03 23:49:10,559 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-03 23:49:12,541 ERROR   gpu       :18464 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-03 23:49:12,541 ERROR   gpu       :18464 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-03 23:49:13,624 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: status_report
+2024-05-03 23:49:13,625 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: status_report
+2024-05-03 23:49:14,570 ERROR   gpu       :18464 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-03 23:49:14,570 ERROR   gpu       :18464 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-03 23:49:15,442 DEBUG   SenderThread:18464 [sender.py:send():382] send: exit
+2024-05-03 23:49:15,442 INFO    SenderThread:18464 [sender.py:send_exit():589] handling exit code: 1
+2024-05-03 23:49:15,443 INFO    SenderThread:18464 [sender.py:send_exit():591] handling runtime: 5
+2024-05-03 23:49:15,445 INFO    SenderThread:18464 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-03 23:49:15,445 INFO    SenderThread:18464 [sender.py:send_exit():597] send defer
+2024-05-03 23:49:15,447 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,447 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-03 23:49:15,449 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,449 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-05-03 23:49:15,449 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 1
+2024-05-03 23:49:15,450 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,450 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-03 23:49:15,451 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,451 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-05-03 23:49:15,451 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 2
+2024-05-03 23:49:15,452 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,452 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-03 23:49:15,452 INFO    HandlerThread:18464 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-03 23:49:15,452 DEBUG   SystemMonitor:18464 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-03 23:49:15,470 INFO    HandlerThread:18464 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-03 23:49:15,470 DEBUG   SystemMonitor:18464 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-03 23:49:15,471 INFO    HandlerThread:18464 [interfaces.py:finish():202] Joined disk monitor
+2024-05-03 23:49:15,471 DEBUG   SystemMonitor:18464 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-03 23:49:15,550 ERROR   gpu       :18464 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-05-03 23:49:15,550 INFO    HandlerThread:18464 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-03 23:49:15,552 INFO    HandlerThread:18464 [interfaces.py:finish():202] Joined memory monitor
+2024-05-03 23:49:15,552 INFO    HandlerThread:18464 [interfaces.py:finish():202] Joined network monitor
+2024-05-03 23:49:15,553 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,553 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-05-03 23:49:15,553 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 3
+2024-05-03 23:49:15,553 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,553 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-03 23:49:15,553 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,553 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-05-03 23:49:15,553 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 4
+2024-05-03 23:49:15,554 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,554 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-03 23:49:15,554 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,554 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-05-03 23:49:15,554 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 5
+2024-05-03 23:49:15,554 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,554 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-03 23:49:15,554 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,554 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-05-03 23:49:15,554 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 6
+2024-05-03 23:49:15,554 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,554 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-03 23:49:15,554 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,554 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-05-03 23:49:15,554 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 7
+2024-05-03 23:49:15,554 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: status_report
+2024-05-03 23:49:15,555 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,555 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: status_report
+2024-05-03 23:49:15,555 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-03 23:49:15,556 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,556 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-05-03 23:49:15,556 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 8
+2024-05-03 23:49:15,556 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,556 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-03 23:49:15,556 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,556 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-05-03 23:49:15,556 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 9
+2024-05-03 23:49:15,556 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,556 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-03 23:49:15,557 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,557 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-05-03 23:49:15,557 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 10
+2024-05-03 23:49:15,557 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,557 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-03 23:49:15,557 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,557 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-05-03 23:49:15,557 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 11
+2024-05-03 23:49:15,558 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,558 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-03 23:49:15,559 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,559 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-05-03 23:49:15,559 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 12
+2024-05-03 23:49:15,559 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,559 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-03 23:49:15,559 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,559 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-05-03 23:49:15,560 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 13
+2024-05-03 23:49:15,560 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,560 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-03 23:49:15,560 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,560 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-05-03 23:49:15,560 INFO    SenderThread:18464 [sender.py:transition_state():617] send defer: 14
+2024-05-03 23:49:15,561 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: defer
+2024-05-03 23:49:15,561 DEBUG   SenderThread:18464 [sender.py:send():382] send: final
+2024-05-03 23:49:15,561 INFO    HandlerThread:18464 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-03 23:49:15,562 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: defer
+2024-05-03 23:49:15,562 INFO    SenderThread:18464 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-05-03 23:49:15,563 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-03 23:49:15,563 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-03 23:49:15,563 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: poll_exit
+2024-05-03 23:49:15,563 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: server_info
+2024-05-03 23:49:15,564 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: poll_exit
+2024-05-03 23:49:15,564 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-03 23:49:15,564 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: server_info
+2024-05-03 23:49:15,565 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-03 23:49:15,565 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-03 23:49:15,566 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: job_info
+2024-05-03 23:49:15,566 DEBUG   SenderThread:18464 [sender.py:send_request():409] send_request: job_info
+2024-05-03 23:49:15,566 INFO    MainThread:18464 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-05-03 23:49:15,566 INFO    MainThread:18464 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-05-03 23:49:15,585 DEBUG   HandlerThread:18464 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-03 23:49:15,586 INFO    HandlerThread:18464 [handler.py:finish():869] shutting down handler
+2024-05-03 23:49:16,571 INFO    WriterThread:18464 [datastore.py:close():296] close: C:\Users\DELL\Desktop\yolov7-main\wandb\offline-run-20240503_234908-s7qc3r05\run-s7qc3r05.wandb
+2024-05-03 23:49:16,571 INFO    SenderThread:18464 [sender.py:finish():1572] shutting down sender

@@ -1,0 +1,1 @@
+ python cam.py --output output_video.mp4 --person-weights yolov7.pt --weapon-weights best.pt --device 0 --camera 0

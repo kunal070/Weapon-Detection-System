@@ -6,8 +6,6 @@ import cv2
 import torch
 import torch.backends.cudnn as cudnn
 from numpy import random
-import matplotlib.pyplot as plt
-
 
 from models.experimental import attempt_load
 from utils.datasets import LoadStreams, LoadImages
@@ -135,7 +133,8 @@ def detect(save_img=False):
 
             # Stream results
             if view_img:
-                cv2.imwrite("output.jpg", im0)  # Save the image instead of displaying
+                cv2.imshow(str(p), cv2.resize(im0,dsize=(0,0), fx=0.7, fy=0.7))
+                cv2.waitKey(1)  # 1 millisecond
 
             # Save results (image with detections)
             if save_img:

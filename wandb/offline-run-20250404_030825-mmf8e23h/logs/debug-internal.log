@@ -1,0 +1,14 @@
+{"time":"2025-04-04T03:08:25.1685657-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\kunal\\OneDrive\\Desktop\\yolov8\\wandb\\offline-run-20250404_030825-mmf8e23h\\logs\\debug-core.log"}
+{"time":"2025-04-04T03:08:25.2810911-04:00","level":"INFO","msg":"created new stream","id":"mmf8e23h"}
+{"time":"2025-04-04T03:08:25.2810911-04:00","level":"INFO","msg":"sender: started","stream_id":"mmf8e23h"}
+{"time":"2025-04-04T03:08:25.2810911-04:00","level":"INFO","msg":"stream: started","id":"mmf8e23h"}
+{"time":"2025-04-04T03:08:25.2810911-04:00","level":"INFO","msg":"handler: started","stream_id":"mmf8e23h"}
+{"time":"2025-04-04T03:08:25.2810911-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"mmf8e23h"}
+{"time":"2025-04-04T03:08:25.2881872-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-04T06:16:57.7131879-04:00","level":"INFO","msg":"stream: closing","id":"mmf8e23h"}
+{"time":"2025-04-04T06:16:57.7138397-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-04T06:16:57.7154466-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-04T06:16:57.717827-04:00","level":"INFO","msg":"handler: closed","stream_id":"mmf8e23h"}
+{"time":"2025-04-04T06:16:57.717827-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mmf8e23h"}
+{"time":"2025-04-04T06:16:57.717827-04:00","level":"INFO","msg":"sender: closed","stream_id":"mmf8e23h"}
+{"time":"2025-04-04T06:16:57.7184051-04:00","level":"INFO","msg":"stream: closed","id":"mmf8e23h"}
