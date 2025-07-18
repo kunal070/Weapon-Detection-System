@@ -22,29 +22,29 @@ This project implements an advanced **object detection model** using **YOLOv7** 
 ## **Sample Results**
 
 ### **Confusion Matrix**
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](runs/train/yolov7-new7/confusion_matrix.png)
 
 ### **Model Metrics**
 - **Precision Curve**  
-  ![Precision Curve](P_curve.png)
+  ![Precision Curve](runs/train/yolov7-new7/P_curve.png)
 - **Recall Curve**  
-  ![Recall Curve](R_curve.png)
+  ![Recall Curve](runs/train/yolov7-new7/R_curve.png)
 - **Precision-Recall (PR) Curve**  
-  ![PR Curve](PR_curve.png)
+  ![PR Curve](runs/train/yolov7-new7/PR_curve.png)
 - **F1 Score vs Confidence**  
-  ![F1 Curve](F1_curve.png)
+  ![F1 Curve](runs/train/yolov7-new7/F1_curve.png)
 
 ### **Training Results**
-![Training Results](results.png)
+![Training Results](runs/train/yolov7-new7/results.png)
 
 ---
 
 ## **Detection Examples**
 **Ground Truth vs Predictions:**
 - **Labeled Test Batch**  
-  ![Test Labels](test_batch0_labels.jpg)
+  ![Test Labels](runs/train/yolov7-new7/test_batch0_labels.jpg)
 - **Predicted Test Batch**  
-  ![Test Predictions](test_batch0_pred.jpg)
+  ![Test Predictions](runs/train/yolov7-new7/test_batch0_pred.jpg)
 
 ---
 
@@ -59,3 +59,47 @@ This project implements an advanced **object detection model** using **YOLOv7** 
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## **Usage**
+
+### **Run Detection**
+```bash
+python cam.py --output output_video.mp4 --person-weights yolov7.pt --weapon-weights best.pt --device 0 --camera 0
+```
+
+### **Parameters**
+- `--output`: Output video file name
+- `--person-weights`: Path to person detection weights
+- `--weapon-weights`: Path to weapon detection weights  
+- `--device`: GPU device (0 for first GPU, cpu for CPU)
+- `--camera`: Camera index (0 for default webcam)
+
+---
+
+## **Project Structure**
+```
+weapon-detection/
+├── cam.py              # Main detection script
+├── detect.py           # Detection utilities
+├── train.py            # Training script
+├── requirements.txt    # Dependencies
+├── best.pt            # Trained weapon detection weights
+├── yolov7.pt          # Pre-trained YOLOv7 weights
+└── runs/              # Training outputs and results
+```
+
+---
+
+## **Training**
+To train the model on your own dataset:
+```bash
+python train.py --data your_dataset.yaml --cfg yolov7.yaml --weights yolov7.pt --epochs 100
+```
+
+---
+
+## **License**
+This project is licensed under the MIT License.
